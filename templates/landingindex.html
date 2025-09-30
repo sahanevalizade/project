@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="left-title">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEvk2nEFXVYBWz9foFrN1wiuUeJ5FlKqTHaw&s" alt="AƏSMA Loqosu" class="logo" />
+        <span>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası</span>
+      </div>
+      <div class="right-title">
+        <span>Azərbaycan Həmkarlar İttifaqları Konfederasiyası</span>
+        <img src="https://kendgidaish.az/assets/images/logoahk.png" alt="AHİK Loqosu" class="logo" />
+      </div>
+    </div>
+    <p>Ali təhsil müəssisəsi əmək, sosial münasibətlər və iqtisadiyyat sahələrində peşəkar mütəxəssislər yetişdirir</p>
+    <a href="#faculties" class="btn">Fakültələrlə tanış ol</a>
+  </header>
+
+  <section id="about" class="about">
+    <h2>Akademiya Haqqında</h2>
+    <p>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası (AƏSMA), Azərbaycan Həmkarlar İttifaqları Konfederasiyasının nəzdində fəaliyyət göstərən yeganə ali təhsil müəssisəsidir. Akademiyanın əsası 1952-ci ildə qoyulmuşdur və o vaxtdan bəri əmək, sosial münasibətlər və iqtisadiyyat sahələrində mütəxəssislər yetişdirir.</p>
+    <p><strong>Ünvan:</strong> Bakı şəhəri, Azadlıq prospekti 181</p>
+    <p><strong>Əlaqə:</strong> +(994) 10 236-50-97 | info@aesma.edu.az</p>
+  </section>
+
+  <section id="faculties">
+    <h2>Fakültələrimiz</h2>
+
+    <div class="faculty">
+      <h3>Sosial İş Fakültəsi</h3>
+      <p>Sosial siyasət, sosial xidmət və cəmiyyətlə iş sahələrində mütəxəssislər hazırlayır.</p>
+      <p><strong>İxtisaslar:</strong></p>
+      <ul>
+        <li>Sosial iş (əyani/qiyabi) – illik təhsil haqqı: 2200 AZN / 1800 AZN</li>
+      </ul>
+      <img src="https://aesma.edu.az/uploads/sosial-fakulte.jpg" alt="Sosial İş Fakültəsi şəkli" />
+    </div>
+
+    <div class="faculty">
+      <h3>Maliyyə və İqtisad Fakültəsi</h3>
+      <p>İqtisadi nəzəriyyə, maliyyə idarəçiliyi və mühasibatlıq üzrə güclü təhsil imkanları təqdim edir.</p>
+      <p><strong>İxtisaslar:</strong></p>
+      <ul>
+        <li>İqtisadiyyat (əyani) – illik təhsil haqqı: 2100 AZN</li>
+        <li>Maliyyə (əyani) – illik təhsil haqqı: 2100 AZN</li>
+        <li>Mühasibatlıq (əyani/qiyabi) – illik təhsil haqqı: 2100 AZN / 1800 AZN</li>
+        <li>Marketinq (əyani/qiyabi) – illik təhsil haqqı: 2100 AZN / 1800 AZN</li>
+        <li>Dövlət və bələdiyyə idarəetməsi (əyani) – illik təhsil haqqı: 2100 AZN</li>
+      </ul>
+      <img src="https://aesma.edu.az/uploads/iqtisad-fakulte.jpg" alt="Maliyyə və İqtisad Fakültəsi şəkli" />
+    </div>
+  </section>
+
+  <section id="halls">
+    <h2>Akt Zalları</h2>
+
+    <div class="hall">
+      <h3>Böyük Akt Zalı</h3>
+      <p>Rəsmi tədbirlər, konfrans və seminarlar üçün istifadə olunur.</p>
+      <img src="{{ url_for('static', filename='images/boyukaktzali.jpg') }}" alt="Böyük Akt Zalı" />
+    </div>
+
+    <div class="hall">
+      <h3>Kiçik Akt Zalı</h3>
+      <p>Kiçik toplantılar və təlimlər üçün uyğundur.</p>
+      <img src="{{ url_for('static', filename='images/kicikakdzali.jpeg') }}" alt="kicik akt zali" />
+    </div>
+
+    <div class="hall">
+      <h3>Dəyirmi Masa Zalı</h3>
+      <p>Müzakirələr və kiçik seminarlar üçün nəzərdə tutulub.</p>
+      <img src="{{ url_for('static', filename='images/deyrimimasa.jpg') }}" alt="deyrimimasa "/>
+  </section>
+
+    <div class="hall">
+     <h3>Həmkarlar Otağı</h3>
+     <p>Həmkarlar ittifaqı üçün görüş və müzakirələr üçün nəzərdə tutulub.</p>
+    <img src="{{ url_for('static', filename='images/hemkarlar.jpg') }}" alt="hemkarlar otagi" />
+</div>
+
+
+  <footer>
+    &copy; 2025 Azərbaycan Əmək və Sosial Münasibətlər Akademiyası. Bütün hüquqlar qorunur.
+  </footer>
+</body>
+</html>
