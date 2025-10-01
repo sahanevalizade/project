@@ -13,50 +13,92 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEvk2nEFXVYBWz9foFrN1wiuUeJ5FlKqTHaw&s" alt="AƏSMA Loqosu" class="logo" />
         <span>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası</span>
       </div>
+
+      <div class="tools">
+        <!-- Dil seçimi -->
+        <form id="language-form">
+          <select name="lang" onchange="changeLanguage(this.value)">
+            <option value="az" selected>AZ</option>
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+          </select>
+        </form>
+
+        <!-- Axtarış hissəsi -->
+        <form class="search-form" onsubmit="event.preventDefault(); alert('Axtarış funksiyası hələ aktiv deyil.');">
+          <input type="text" placeholder="Axtar..." />
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+
       <div class="right-title">
         <span>Azərbaycan Həmkarlar İttifaqları Konfederasiyası</span>
         <img src="https://kendgidaish.az/assets/images/logoahk.png" alt="AHİK Loqosu" class="logo" />
       </div>
     </div>
+
     <p>Ali təhsil müəssisəsi əmək, sosial münasibətlər və iqtisadiyyat sahələrində peşəkar mütəxəssislər yetişdirir</p>
     <a href="#faculties" class="btn">Fakültələrlə tanış ol</a>
   </header>
 
+  <!-- Haqqında -->
   <section id="about" class="about">
     <h2>Akademiya Haqqında</h2>
-    <p>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası (AƏSMA), Azərbaycan Həmkarlar İttifaqları Konfederasiyasının nəzdində fəaliyyət göstərən yeganə ali təhsil müəssisəsidir. Akademiyanın əsası 1952-ci ildə qoyulmuşdur və o vaxtdan bəri əmək, sosial münasibətlər və iqtisadiyyat sahələrində mütəxəssislər yetişdirir.</p>
+    <p>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası (AƏSMA), Azərbaycan Həmkarlar İttifaqları Konfederasiyasının nəzdində fəaliyyət göstərən yeganə ali təhsil müəssisəsidir. Akademiyanın əsası 1952-ci ildə qoyulmuşdur.</p>
     <p><strong>Ünvan:</strong> Bakı şəhəri, Azadlıq prospekti 181</p>
     <p><strong>Əlaqə:</strong> +(994) 10 236-50-97 | info@aesma.edu.az</p>
   </section>
 
+  <!-- Fakültələr -->
   <section id="faculties">
     <h2>Fakültələrimiz</h2>
 
+    <!-- Sosial İş Fakültəsi -->
     <div class="faculty">
       <h3>Sosial İş Fakültəsi</h3>
       <p>Sosial siyasət, sosial xidmət və cəmiyyətlə iş sahələrində mütəxəssislər hazırlayır.</p>
-      <p><strong>İxtisaslar:</strong></p>
-      <ul>
-        <li>Sosial iş (əyani/qiyabi) – illik təhsil haqqı: 2200 AZN / 1800 AZN</li>
-      </ul>
-      <img src="https://aesma.edu.az/uploads/sosial-fakulte.jpg" alt="Sosial İş Fakültəsi şəkli" />
+      <p><strong>Əyani:</strong> Sosial iş – 2200 AZN</p>
+      <p><strong>Qiyabi:</strong> Sosial iş – 1800 AZN</p>
+      <img src="{{ url_for('static', filename='images/sosialfakulte.jpeg') }}" alt="Sosial İş Fakültəsi" />
     </div>
 
+    <!-- Maliyyə və İqtisad Fakültəsi -->
     <div class="faculty">
       <h3>Maliyyə və İqtisad Fakültəsi</h3>
       <p>İqtisadi nəzəriyyə, maliyyə idarəçiliyi və mühasibatlıq üzrə güclü təhsil imkanları təqdim edir.</p>
-      <p><strong>İxtisaslar:</strong></p>
+      
+      <p><strong>Əyani:</strong></p>
       <ul>
-        <li>İqtisadiyyat (əyani) – illik təhsil haqqı: 2100 AZN</li>
-        <li>Maliyyə (əyani) – illik təhsil haqqı: 2100 AZN</li>
-        <li>Mühasibatlıq (əyani/qiyabi) – illik təhsil haqqı: 2100 AZN / 1800 AZN</li>
-        <li>Marketinq (əyani/qiyabi) – illik təhsil haqqı: 2100 AZN / 1800 AZN</li>
-        <li>Dövlət və bələdiyyə idarəetməsi (əyani) – illik təhsil haqqı: 2100 AZN</li>
+        <li>İqtisadiyyat – 2100 AZN</li>
+        <li>Maliyyə – 2100 AZN</li>
+        <li>Mühasibatlıq – 2100 AZN</li>
+        <li>Marketinq – 2100 AZN</li>
+        <li>Dövlət və bələdiyyə idarəetməsi – 2100 AZN</li>
       </ul>
-      <img src="https://aesma.edu.az/uploads/iqtisad-fakulte.jpg" alt="Maliyyə və İqtisad Fakültəsi şəkli" />
+      
+      <p><strong>Qiyabi:</strong></p>
+      <ul>
+        <li>Mühasibatlıq – 1800 AZN</li>
+        <li>Marketinq – 1800 AZN</li>
+      </ul>
+
+      <img src="{{ url_for('static', filename='images/maliyyefakulte.jpeg') }}" alt="Maliyyə və İqtisad Fakültəsi" />
+    </div>
+
+    <!-- Magistratura -->
+    <div class="faculty">
+      <h3>Magistratura Təhsili (Qiyabi)</h3>
+      <p>Əmək, sosial münasibətlər və iqtisadiyyat sahələrində ixtisaslaşmış magistr proqramları.</p>
+      <ul>
+        <li>Sosial iş – 2500 AZN</li>
+        <li>İqtisadiyyat – 2500 AZN</li>
+        <li>Maliyyə – 2500 AZN</li>
+      </ul>
+      <img src="{{ url_for('static', filename='images/magistratura.jpeg') }}" alt="Magistratura şöbəsi" />
     </div>
   </section>
 
+  <!-- Akt Zalları -->
   <section id="halls">
     <h2>Akt Zalları</h2>
 
@@ -69,24 +111,30 @@
     <div class="hall">
       <h3>Kiçik Akt Zalı</h3>
       <p>Kiçik toplantılar və təlimlər üçün uyğundur.</p>
-      <img src="{{ url_for('static', filename='images/kicikakdzali.jpeg') }}" alt="kicik akt zali" />
+      <img src="{{ url_for('static', filename='images/kicikakdzali.jpeg') }}" alt="Kiçik Akt Zalı" />
     </div>
 
     <div class="hall">
       <h3>Dəyirmi Masa Zalı</h3>
       <p>Müzakirələr və kiçik seminarlar üçün nəzərdə tutulub.</p>
-      <img src="{{ url_for('static', filename='images/deyrimimasa.jpg') }}" alt="deyrimimasa "/>
-  </section>
+      <img src="{{ url_for('static', filename='images/deyrimimasa.jpg') }}" alt="Dəyirmi Masa Zalı"/>
+    </div>
 
     <div class="hall">
-     <h3>Həmkarlar Otağı</h3>
-     <p>Həmkarlar ittifaqı üçün görüş və müzakirələr üçün nəzərdə tutulub.</p>
-    <img src="{{ url_for('static', filename='images/hemkarlar.jpg') }}" alt="hemkarlar otagi" />
-</div>
-
+      <h3>Həmkarlar Otağı</h3>
+      <p>Həmkarlar ittifaqı üçün görüş və müzakirələr üçün nəzərdə tutulub.</p>
+      <img src="{{ url_for('static', filename='images/hemkarlar.jpg') }}" alt="Həmkarlar otağı" />
+    </div>
+  </section>
 
   <footer>
     &copy; 2025 Azərbaycan Əmək və Sosial Münasibətlər Akademiyası. Bütün hüquqlar qorunur.
   </footer>
+
+  <script>
+    function changeLanguage(lang) {
+      alert("Dil dəyişdirmə funksiyası hələlik aktiv deyil. Seçilən dil: " + lang.toUpperCase());
+    }
+  </script>
 </body>
 </html>
