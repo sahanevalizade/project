@@ -15,20 +15,6 @@
       </div>
 
       <div class="tools">
-        <!-- Dil seçimi -->
-        <form id="language-form">
-          <select name="lang" onchange="changeLanguage(this.value)">
-            <option value="az" selected>AZ</option>
-            <option value="ru">RU</option>
-            <option value="en">EN</option>
-          </select>
-        </form>
-
-        <!-- Axtarış hissəsi -->
-        <form class="search-form" onsubmit="event.preventDefault(); alert('Axtarış funksiyası hələ aktiv deyil.');">
-          <input type="text" placeholder="Axtar..." />
-          <button type="submit">🔍</button>
-        </form>
       </div>
 
       <div class="right-title">
@@ -44,9 +30,8 @@
   <!-- Haqqında -->
   <section id="about" class="about">
     <h2>Akademiya Haqqında</h2>
-    <p>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası (AƏSMA), Azərbaycan Həmkarlar İttifaqları Konfederasiyasının nəzdində fəaliyyət göstərən yeganə ali təhsil müəssisəsidir. Akademiyanın əsası 1952-ci ildə qoyulmuşdur.</p>
-    <p><strong>Ünvan:</strong> Bakı şəhəri, Azadlıq prospekti 181</p>
-    <p><strong>Əlaqə:</strong> +(994) 10 236-50-97 | info@aesma.edu.az</p>
+    <p>Azərbaycan Əmək və Sosial Münasibətlər Akademiyası (AƏSMA) 1952-ci ildən təsis edilmişdir. 2006-cı ildə müstəqil olaraq Azərbaycan Əmək və Sosial Münasibətlər Akademiyası adı ilə fəaliyyətini davam etdirmişdir.
+Hazırda AƏSMA özəl ali təhsil müəssisəsi kimi fəaliyyət göstərir və müasir əmək bazarının tələblərinə uyğun kadr hazırlığını həyata keçirir. Akademiyada 2 fakültə – “Maliyyə-İqtisad” və “Sosial iş” fakültələri mövcuddur. Tədris prosesi “İqtisadiyyat və idarəetmə”, “Mühasibat və maliyyə”, “Riyaziyyat və informasiya texnologiyaları”, “Həmkarlar İttifaqları Hərəkatı və sosial fənlər”, “Humanitar fənlər” kafedralarında təşkil olunur. Bundan əlavə, “Magistratura”, “Qiyabi, əlavə təhsil və əcnəbi tələbələrlə iş” şöbələri də fəaliyyət göstərir. Akademiyada təhsil bakalavriat və magistratura səviyyəsində təşkil edilir.</p>
   </section>
 
   <!-- Fakültələr -->
@@ -56,18 +41,17 @@
     <!-- Sosial İş Fakültəsi -->
     <div class="faculty">
       <h3>Sosial İş Fakültəsi</h3>
-      <p>Sosial siyasət, sosial xidmət və cəmiyyətlə iş sahələrində mütəxəssislər hazırlayır.</p>
+      <p>Sosial iş fakültəsində sosial iş ixtisası üzrə kadr hazırlığı aparılır. Həmçinin fakültədə Gender Araşdırmalar Mərkəzi və Sosial araşdırmalar laboratoriyası fəaliyyət göstərir.</p>
       <p><strong>Əyani:</strong> Sosial iş – 2200 AZN</p>
-      <p><strong>Qiyabi:</strong> Sosial iş – 1800 AZN</p>
+      <p><stronSosial iş fakültəsində sosial iş ixtisası üzrə kadr hazırlığı aparılır. Həmçinin fakültədə Gender Araşdırmalar Mərkəzi və Sosial araşdırmalar laboratoriyası fəaliyyət göstərir.g>Qiyabi:</strong> Sosial iş – 1800 AZN</p>
       <img src="{{ url_for('static', filename='images/sosialfakulte.jpeg') }}" alt="Sosial İş Fakültəsi" />
-    </div>
+    </div.
 
-    <!-- Maliyyə və İqtisad Fakültəsi -->
+      <!-- Maliyyə və İqtisad Fakültəsi -->
     <div class="faculty">
       <h3>Maliyyə və İqtisad Fakültəsi</h3>
-      <p>İqtisadi nəzəriyyə, maliyyə idarəçiliyi və mühasibatlıq üzrə güclü təhsil imkanları təqdim edir.</p>
-      
-      <p><strong>Əyani:</strong></p>
+      <p>Maliyyə - İqtisad fakültəsində maliyyə, mühasibat, iqtisadiyyat, dövlət və bələdiyyə idarəetməsi, marketinq ixtisasları üzrə kadr hazırlığı həyata keçirilir. Fakültənin nəzdində Maliyyə uçotu laboratoriyası, “İqtisadi araşdırmalar və innovasiyalar” mərkəzi fəaliyyət göstərir.</p>
+      <p><stronMaliyyə -p>
       <ul>
         <li>İqtisadiyyat – 2100 AZN</li>
         <li>Maliyyə – 2100 AZN</li>
@@ -87,14 +71,22 @@
 
     <!-- Magistratura -->
     <div class="faculty">
-      <h3>Magistratura Təhsili (Qiyabi)</h3>
+      <h3>Magistratura Təhsili</h3>
       <p>Əmək, sosial münasibətlər və iqtisadiyyat sahələrində ixtisaslaşmış magistr proqramları.</p>
       <ul>
-        <li>Sosial iş – 2500 AZN</li>
-        <li>İqtisadiyyat – 2500 AZN</li>
-        <li>Maliyyə – 2500 AZN</li>
+        <li>
+İqtisadiyyatın tənzimlənməsi 1600 AZN</li>
+<li>Turizmin iqtisadiyyatı 1600 AZN</li>
+<li>Mülkiyyət obyeklərinin qiymətləndirilməsi 1600 AZN</li>
+<li>Maliyyə bazarları 1600 AZN</li>
+<li>Bank işi 1600 AZN</li>
+<li>Sığorta və risklərin idarə edilməsi 1600 AZN</li>
+<li>Beynəlxalq marketinq 1600 AZN</li>
+<li>Maliyyə mühasibatlığı 1600 AZN</li>
+<li>Həyat fəaliyyətinin müxtəlif sahələrində sosial iş 1600 AZN</li>
+<li>Gənclərlə iş 1600 AZN</li>
+
       </ul>
-      <img src="{{ url_for('static', filename='images/magistratura.jpeg') }}" alt="Magistratura şöbəsi" />
     </div>
   </section>
 
@@ -115,26 +107,29 @@
     </div>
 
     <div class="hall">
-      <h3>Dəyirmi Masa Zalı</h3>
+      <h3>Dəyirmi Masa </h3>
       <p>Müzakirələr və kiçik seminarlar üçün nəzərdə tutulub.</p>
       <img src="{{ url_for('static', filename='images/deyrimimasa.jpg') }}" alt="Dəyirmi Masa Zalı"/>
     </div>
 
     <div class="hall">
-      <h3>Həmkarlar Otağı</h3>
-      <p>Həmkarlar ittifaqı üçün görüş və müzakirələr üçün nəzərdə tutulub.</p>
+      <h3>İxtisasartırma və Kadrların İnkişafı Mərkəz</h3>
+      <p>AHİK-in üzv və tabe təşkilatlarının əməkdaşları üçün müxtəlif istiqamətlərdə təlimlər həyata keçirilir.</p>
       <img src="{{ url_for('static', filename='images/hemkarlar.jpg') }}" alt="Həmkarlar otağı" />
     </div>
   </section>
 
+
+      <p><strong>Ünvan:</strong> Bakı şəhəri, Azadlıq prospekti 181</p>
+    <p><strong>Əlaqə:</strong> +(994) 10 236-50-97
+    +(994) 12 525-96-40
+    +(994) 12 525-95-08
+    +(994) 10 236-50-99|
+    info@aesma.edu.az</p>
+
   <footer>
     &copy; 2025 Azərbaycan Əmək və Sosial Münasibətlər Akademiyası. Bütün hüquqlar qorunur.
-  </footer>
+  </footer>  
 
-  <script>
-    function changeLanguage(lang) {
-      alert("Dil dəyişdirmə funksiyası hələlik aktiv deyil. Seçilən dil: " + lang.toUpperCase());
-    }
-  </script>
 </body>
 </html>
